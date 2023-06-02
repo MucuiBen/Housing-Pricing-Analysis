@@ -1,6 +1,8 @@
 ## Project Overview
 
-This project focuses on XYZ Real Estate Agency, situated in a vibrant northwestern county, and aims to analyze key factors influencing house prices in the area. By developing a robust multiple linear regression model, the agency can determine optimal pricing strategies and enhance their annual sales. The project utilizes data-driven strategies and analytical insights to reimagine real estate and transcend conventional boundaries.
+This project focuses on XYZ Real Estate Agency, situated in a vibrant northwestern county, and aims to analyze key factors influencing house prices in the area. By developing a robust multiple linear regression model, the agency can determine optimal pricing strategies and enhance their annual sales. 
+
+The project utilizes data-driven strategies and analytical insights to reimagine real estate and transcend conventional boundaries.
 
 ### Business Problem
 
@@ -8,14 +10,16 @@ XYZ Real Estate Agency needs assistance in identifying the crucial factors that 
 
 ### Project Objectives
 
-- Identify the significant features that influence house prices in the northwestern county.
-- Develop an optimal pricing strategy using a robust multiple linear regression model.
-- Identify overpriced or underpriced houses by comparing predicted and actual prices.
-- Improve the agency's annual revenue by leveraging analytical insights and the developed pricing strategy.
++  Identify the significant features that influence house prices in the northwestern county.
++  Develop an optimal pricing strategy using a robust multiple linear regression model.
++  Identify overpriced or underpriced houses by comparing predicted and actual prices.
++  Improve the agency's annual revenue by leveraging analytical insights and the developed pricing strategy.
 
 ### Data Description Report
 
-The dataset used in this project consists of 21 columns and 21,597 rows, encompassing various data types such as float, integer, and object. Some columns contain missing values, which were handled by dropping the corresponding rows. Data cleaning procedures included converting data types and creating a subset of features for analysis. Exploratory data analysis techniques, including univariate and bivariate analysis, were applied to gain insights into the dataset's characteristics.
+The dataset used in this project consists of 21 columns and 21,597 rows, encompassing various data types such as float, integer, and object. Some columns contain missing values, which were handled by dropping the corresponding rows.
+
+Data cleaning procedures included converting data types and creating a subset of features for analysis. Exploratory data analysis techniques, including univariate and bivariate analysis, were applied to gain insights into the dataset's characteristics.
 
 ### Exploratory Data Analysis
 
@@ -23,7 +27,13 @@ Univariate analysis involved examining the distribution and characteristics of i
 
 ### Model Development
 
-Four models were developed during the project. The baseline model, utilizing a simple linear regression, established the initial understanding of the relationship between the square footage of living space and house prices. From the simple linear model, it was observed the model wasn't the best for this analysis. The model's R2 value was extreemly low, indicating that there are other numerous factors in housing that affect the house prices. These results showed that another iteration was needed. In the second model OneHot Encoding was introduced to convert the categorical variables to binary representation which is suitable for machine learning algorithms. The second model certainly improved from the baseline model. The R2 was at 80.8%; The F-statistic of 692.2 with a probability (p-value) of 0.00 suggests that the overall model is statistically significant, meaning that at least one of the independent variables has a significant effect on the dependent variable. To further improve the model, a third iteration was needed, In this model, Log Transformation was introduced to reduce skewness. The results from this iteration reduced skewness while simultaniously increasing the R2 making the model highly significant. The final model, a multiple linear regression, incorporated additional features to improve the predictive power. Evaluation metrics such as R-squared and F-statistic were used to assess the model's performance and significance. In this model, insignificant variables were dropped to achieve the highest prediction power of the models. The results gotten from this model's summary displayed the highest R2 value, and the best fit of residuals to a normal distribution. 
++ Four models were developed during the project. 
++ The baseline model, utilizing a simple linear regression, established the initial understanding of the relationship between the square footage of living space and house prices. From the simple linear model, it was observed the model wasn't the best for this analysis. The model's R2 value was extreemly low, indicating that there are other numerous factors in housing that affect the house prices. These results showed that another iteration was needed. 
+
++ In the second model OneHot Encoding was introduced to convert the categorical variables to binary representation which is suitable for machine learning algorithms. The second model certainly improved from the baseline model. The R2 was at 80.8%; The F-statistic of 692.2 with a probability (p-value) of 0.00 suggests that the overall model is statistically significant, meaning that at least one of the independent variables has a significant effect on the dependent variable.
++  To further improve the model, a third iteration was needed, In this model, Log Transformation was introduced to reduce skewness. The results from this iteration reduced skewness while simultaniously increasing the R2 making the model highly significant. 
++  The final model, a multiple linear regression, incorporated additional features to improve the predictive power. Evaluation metrics such as R-squared and F-statistic were used to assess the model's performance and significance. In this model, insignificant variables were dropped to achieve the highest prediction power of the models.
++   The results gotten from this model's summary displayed the highest R2 value, and the best fit of residuals to a normal distribution. 
 
 ### Conclusion
 
