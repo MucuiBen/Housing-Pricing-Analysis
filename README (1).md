@@ -64,3 +64,4 @@ To further enhance the project, the following steps are recommended:
 3. Refine the model: Explore other regression techniques, address issues such as multicollinearity, overfitting, and underfitting to improve the accuracy and predictive power of the model.
 
 4. Stay updated and iterate: Continuously update the model with new data and monitor industry trends to ensure its accuracy and relevance in the evolving real estate market.
+
